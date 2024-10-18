@@ -10,10 +10,6 @@ variable "env" {
   type = string
 }
 
-variable "vpc_id" {
-  type = string
-}
-
 variable "aws_profile" {
   type = string
 }
@@ -29,7 +25,9 @@ variable "elements_map" {
 variable "elements_splat" {
   type = list(any)
 }
-
+variable "rds_name" {
+  type = string
+}
 variable "rds_engine_version" {
   type = string
 }
@@ -43,5 +41,8 @@ variable "rds_username" {
   type = string
 }
 variable "rds_password" {
+  type = string
+}
+variable "cidr_vpc" {
   type = string
 }
